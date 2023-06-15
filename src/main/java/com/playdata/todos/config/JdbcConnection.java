@@ -10,7 +10,7 @@ public class JdbcConnection {
     private final String username = "root";
     private final String password = "1q2w3e4r!!";
 
-    public java.sql.Connection getJdbc()  {
+    public  java.sql.Connection getJdbc()  {
         java.sql.Connection conn;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
