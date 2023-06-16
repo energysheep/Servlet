@@ -32,4 +32,20 @@
     <servlet-name>mainServlet</servlet-name>
     <url-pattern>/main</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>backServlet</servlet-name>
+    <servlet-class>com.playdata.todos.servlet.BackServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>backServlet</servlet-name>
+    <url-pattern>/back</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>updateServlet</servlet-name>
+    <servlet-class>com.playdata.todos.servlet.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateServlet</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
 </web-app>
