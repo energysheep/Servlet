@@ -28,6 +28,7 @@ public class LoginServlet extends HttpServlet {
 //        resp.addCookie(cookie2);
         HttpSession session = req.getSession(); //세션은 톰캣 외부 접근 불가능 , 보안 좋다 , 성능 나쁘다,  key값으로 가져왔다
         session.setAttribute("uname", user.getName());
+        session.setAttribute("uid", user.getId());
         if(user != null) {
             resp.sendRedirect("/main");
         }else resp.sendRedirect("/user");
